@@ -1,0 +1,23 @@
+#disambiguing i: remove pronoun if the following token is noun
+
+DELIMITERS = "." ;
+
+LIST PRON = PRON ;
+LIST NOUN = NOUN ;
+LIST ADP = ADP ;
+LIST DET = DET ;
+LIST CCONJ = CCONJ ;
+LIST PART = PART ;
+
+
+SECTION
+
+#disabiguating i
+REMOVE PRON IF (1C NOUN) ;
+
+#disambiguing më
+REMOVE ADP IF (not 1C NOUN) ;
+
+#disambiguing e 
+REMOVE PRON IF (-1* NOUN) (-1 PART) ;
+REMOVE CCONJ IF (-1 PART) ;

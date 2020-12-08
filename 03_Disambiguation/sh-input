@@ -1,0 +1,41 @@
+"<Në>"
+	"në" ADP
+"<fushën>"
+	"fushë" NOUN Case=Acc Definite=Def Gender=Fem Number=Sing
+"<kulturore>"
+	"kulturor" ADJ Gender=Fem Number=Sing
+"<,>"
+	"," PUNCT
+"<gjëja>"
+	"gjë" NOUN Case=Nom Definite=Def Gender=Fem Number=Sing
+"<më>"
+	"më" PART
+	"më" ADP
+"<e>"
+	"i" DET Gender=Fem
+	"e" DET
+	"e" DET Gender=Fem
+	"ai" PRON Gender=Fem Number=Sing PronType=Emp
+	"i" PRON Gender=Fem Number=Sing PronType=Prs
+	"i" DET Gender=Fem Number=Plur
+	"i" CCONJ Gender=Fem
+	"i" PRON Gender=Fem Number=Sing PronType=Emp
+"<dukshme>"
+	"dukshëm" ADJ Gender=Fem Number=Sing
+"<asokohe>"
+	"asokohe" ADV
+"<ishte>"
+	"jam" AUX Aspect=Imp Mood=Ind Number=Sing Person=3 Tense=Past Voice=Act
+"<zhvillimi>"
+	"zhvillim" NOUN Case=Nom Definite=Def Gender=Masc Number=Sing
+"<i>"
+	"i" DET Gender=Masc
+	"i" PRON Gender=Masc Number=Sing
+	"i" PRON Gender=Masc Number=Plur PronType=Emp
+	"i" PRON Gender=Masc
+"<mendimeve>"
+	"mendim" NOUN Case=Gen Definite=Def Gender=Fem NounType=Het Number=Plur
+"<metafizike>"
+	"metafizik" ADJ Gender=Fem Number=Plur
+"<.>"
+	"." PUNCT
