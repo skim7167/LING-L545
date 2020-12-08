@@ -1,0 +1,13 @@
+Multichar_Symbols
+
+%<n%>                ! Nombre
+
+LEXICON Root
+
+ava%<n%>:ava # ; ! "raza, gente"
+
+óga%<n%>:óga # ; ! "house"
+
+irũ%<n%>:irũ # ; ! “friend”
+
+apyka%<n%>:apyka # ; ! “chair”

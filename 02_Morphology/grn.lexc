@@ -1,0 +1,106 @@
+Multichar_Symbols
+
+%>                   ! Frontera de morfema
+%<n%>                ! Nombre
+%<nom%>              ! Nominativo
+%<gen%>              ! Genitivo
+%<loc%>              ! Locativo
+%<comp%>             ! Comparatif
+%{m%}                ! Archiphoneme m p
+%<der_kue%>          ! Derivational
+%<pl%>               ! Plural
+%{n%}                ! Archiphoneme 0 n
+%{g%}                ! Archiphoneme k g
+%{s%}                ! Spanish lex
+%{d%}                ! Nasal indication for digit
+%<num%>              ! Numeral
+
+LEXICON Root
+
+Nouns ;
+DIGITLEX ;
+
+LEXICON N
+
+%<n%>: CASE ;
+
+%<n%>: SUBST ;
+
+%<n%>: PL ;
+
+LEXICON CASE
+
+%<nom%>: # ; ! ""
+%<gen%>:%>gua # ; ! "de"
+%<loc%>:%>%{m%}e # ; ! "a, en"
+%<comp%>:%>icha # ; ! "more"
+
+
+LEXICON PL
+
+%<pl%>:%>%{n%}%{g%}uéra CASE ;
+
+
+LEXICON SUBST
+
+%<der_kue%>:%>kue # "weight: 1.0" ;
+
+
+LEXICON N-SPA
+
+:%{s%} N ;
+
+
+LEXICON Nouns
+
+ava:ava N ; ! "raza, gente"
+óga:óga N ; ! "casa"
+irũ:irũ N ; ! "amigo"
+apyka:apyka N ; ! "silla"
+tembiasa:tembiasa N ; ! "experiencia"
+tembiasakue:tembiasakue N ; ! "historia"
+akãvai:akãvai N ; ! "locura"
+ja:ja N ; ! "ocasión"
+jagua:jagua N ; ! "perro"
+asociación:asociación N-SPA ; ! "association"
+declaración:declaración N-SPA ; ! "declaration"
+
+
+
+LEXICON NUM-DIGIT
+
+%<num%>:%- CASE ;
+
+
+LEXICON LOOP
+
+LAST-DIGIT ;
+DIGITLEX ;
+
+
+LEXICON LAST-DIGIT
+
+%0:%0%{d%} NUM-DIGIT ; ! "papaʼỹ"
+1:1%{d%} NUM-DIGIT ; ! "peteĩ"
+2:2 NUM-DIGIT ; ! "mokõi"
+3:3 NUM-DIGIT ; ! "mbohapy"
+4:4 NUM-DIGIT ; ! "irundy"
+5:5 NUM-DIGIT ; ! "po"
+6:6%{d%} NUM-DIGIT ; ! "poteĩ"
+7:7 NUM-DIGIT ; ! "pokõi"
+8:8 NUM-DIGIT ; ! "poapy"
+9:9 NUM-DIGIT ; ! "porundy"
+
+
+LEXICON DIGITLEX
+
+%0:%0 LOOP ;
+1:1   LOOP ;
+2:2   LOOP ;
+3:3   LOOP ;
+4:4   LOOP ;
+5:5   LOOP ;
+6:6   LOOP ;
+7:7   LOOP ;
+8:8   LOOP ;
+9:9   LOOP ;
